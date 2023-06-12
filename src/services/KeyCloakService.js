@@ -28,7 +28,7 @@ class KeyCloakService extends AbstractService{
             url: conf.keycloak.url, 
             realm: conf.keycloak.realm, 
             clientId: conf.keycloak.clientId,
-	    responseMode: "query"
+            responseMode: "query"
         }
     }
 
