@@ -25,10 +25,9 @@ class KeyCloakService extends AbstractService{
 
     setConf(conf) {
         this.initOptions = {
-            url: conf.keycloak.url, 
-            realm: conf.keycloak.realm, 
-            clientId: conf.keycloak.clientId,
-            responseMode: "query"
+            url: conf.keycloak.url,
+            realm: conf.keycloak.realm,
+            clientId: conf.keycloak.clientId
         }
     }
 
@@ -38,12 +37,12 @@ class KeyCloakService extends AbstractService{
         }
         return new Promise((resolve) => {
             this.logger.log(-1, 'init() > enter')
-         
-                      
+
             const keycloak = new Keycloak(this.initOptions);
             keycloak.init({
 		onLoad: 'check-sso',
-		silentCheckSsoRedirectUri: window.location.origin + '/sso.html'
+		silentCheckSsoRedirectUri: window.location.origin + '/sso.html',
+		responseMode: 'query'
             })
           
             keycloak.onReady = () => {
