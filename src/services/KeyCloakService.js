@@ -42,7 +42,7 @@ class KeyCloakService extends AbstractService{
             const keycloak = new Keycloak(this.initOptions);
             keycloak.init({
 		onLoad: 'check-sso',
-		silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html'
+		silentCheckSsoRedirectUri: window.location.origin + '/sso.html'
             })
           
             keycloak.onReady = () => {
