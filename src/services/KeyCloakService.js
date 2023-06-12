@@ -111,8 +111,7 @@ class KeyCloakService extends AbstractService{
         this.logger.log(-1, 'KeyCloakService.logout()')
         localStorage.removeItem('quxKeyCloakUser');
         if (this.keycloak) {
-            this.keycloak.logout();
-	    this.keycloak.clearToken()
+            this.keycloak.logout()
         }
     }
 
