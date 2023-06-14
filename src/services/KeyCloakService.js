@@ -132,7 +132,7 @@ class KeyCloakService extends AbstractService{
   }
 
   async loadById (id) {
-    return await this._get('/rest/user/' + id + '.json')
+    return await this._get('/rest/user/external/' + id + '.json')
   }
 
   getNotications () {
