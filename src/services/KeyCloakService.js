@@ -58,7 +58,7 @@ class KeyCloakService extends AbstractService{
               id: user.id,
               name: user.username,
               lastname: user.lastname,
-              email: user.username,
+              email: user.email,
               token: keycloak.token
             }
             this.isInited = true
@@ -74,7 +74,7 @@ class KeyCloakService extends AbstractService{
                 id: user.id,
                 name: user.username,
                 lastname: user.lastname,
-                email: user.username,
+                email: user.email,
                 token: keycloak.token
               }
               this.setUser(quxUser)
