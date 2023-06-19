@@ -55,7 +55,7 @@ class KeyCloakService extends AbstractService{
           keycloak.loadUserProfile().then(async user => {
             this.logger.log(-1, 'init()', 'user loaded', user)
             const quxUser = {
-              id:user.id,
+              id: user.id,
               name: user.username,
               lastname: user.lastname,
               email: user.username,
@@ -71,7 +71,7 @@ class KeyCloakService extends AbstractService{
                 Logger.error('Keycloak failed to refresh token')
               })
               const quxUser = {
-                id:user.id,
+                id: user.id,
                 name: user.username,
                 lastname: user.lastname,
                 email: user.username,
