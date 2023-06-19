@@ -155,7 +155,7 @@
 		"_type": "Widget",
 		"category": "WireFrame",
 		"subcategory": "XFormButton",
-		"name": "Animated Label",
+		"name": "Animated Number",
 		"x": 0,
 		"y": 0,
 		"w": 120,
@@ -171,13 +171,44 @@
 		"has": {
 			"label": true,
 			"padding": true,
-			"advancedText": true,
-			"data": true
-		},
+			"advancedText": true		},
 		"style": {
 			"fontSize": "Auto",
 			"fontFamily": "Helvetica Neue,Helvetica,Arial,sans-serif",
 			"textAlign": "center",
+			"letterSpacing": 0,
+			"lineHeight": 1,
+			"color": "#333333",
+			"textShadow": null
+		}
+	},
+	{
+		"id": "ChatLabel",
+		"type": "Label",
+		"_type": "Widget",
+		"category": "WireFrame",
+		"subcategory": "XFormButton",
+		"name": "Animated Text",
+		"x": 0,
+		"y": 0,
+		"w": 120,
+		"h": 32,
+		"z": 0,
+		"props": {
+			"label": "Loading...",
+			"animated": true,
+			"animation": "chat",
+			"duration": 3
+		},
+		"has": {
+			"label": true,
+			"padding": true,
+			"advancedText": true
+		},
+		"style": {
+			"fontSize": "24",
+			"fontFamily": "Helvetica Neue,Helvetica,Arial,sans-serif",
+			"textAlign": "left",
 			"letterSpacing": 0,
 			"lineHeight": 1,
 			"color": "#333333",
